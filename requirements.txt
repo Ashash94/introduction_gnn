@@ -1,0 +1,8 @@
+networkx
+torch
+matplotlib
+scikit-learn
+numpy
+pandas
+black
+notebook
