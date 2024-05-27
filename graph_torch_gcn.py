@@ -1,6 +1,6 @@
 import torch
 
-from functions import GCN, visualize, dataset, train_gcn, test_gcn
+from functions import GCN, visualize_gcn, dataset, train_gcn, test_gcn
 
 print(f"Dataset: {dataset}")
 print("======================")
@@ -20,7 +20,7 @@ criterion = torch.nn.CrossEntropyLoss()
 model.eval()
 
 out = model(data.x, data.edge_index)
-visualize(out, color=data.y)
+visualize_gcn(out, color=data.y)
 
 for epoch in range(1, 101):
     loss = train_gcn(model, optimizer, criterion, data)
@@ -31,4 +31,4 @@ print(f"Test Accuracy: {test_acc:.4f}")
 
 model.eval()
 out = model(data.x, data.edge_index)
-visualize(out, color=data.y)
+visualize_gcn(out, color=data.y)
