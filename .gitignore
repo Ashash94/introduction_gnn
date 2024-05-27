@@ -1,3 +1,4 @@
 # GNN
 *.png
 **/__pycache__/
+data/
