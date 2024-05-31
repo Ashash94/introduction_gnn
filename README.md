@@ -26,6 +26,7 @@ project/
 ## Jeu de données
 Le dataset *cora* provient de l'ensemble de données de citations "Planetoid" disponible dans Pytorch. Nous exploiterons le premier graph du dataset duquel on classifiera les noeuds. 
 Voici les informations sur ce graph : 
+
 *Data(x=[2708, 1433], edge_index=[2, 10556], y=[2708], train_mask=[2708], val_mask=[2708], test_mask=[2708])*
 - *"x=[2708, 1433]"* : reprend la taille de la matrice, 2708 noeuds et 1433 éléments qui décrivent les caractéristiques de chaque noeud.
 - *"edge_index=[2, 10556]"* : La première valeur correspond au nombre de colonne dans le tenseur de l'index d'arrêtes. Chacune des colonnes contient l'indice des noeuds que les arrêtes relient. Puis la seconde valeur correspond au nombre d'arrêtes dans le graph.
