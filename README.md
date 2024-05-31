@@ -52,10 +52,11 @@ Ce code renvoie les résultats des epochs selon la méthode GAT et génère deux
 
 ### **requirements.txt**
 
-Les bibliothèques nécessaires à l'exécution du code sont listées dans ce fichier. 
-**networkx** : La bibliothèque NetworkX est utilisée pour créer les graphs dans le fichier *graph_nx.py*.
-**torch** : Du package Pytorch est extrait le dataset *Cora* sur lequel sera entrainé les modèles de classification des noeuds avec différentes couches de convolution (GCN & GAT).
-**matplotlib** : Pour la visualisation de la classification des graphs et de la pertinence du modèle sur les données de validation et de test.
-**scikit-learn** : Le module *sklearn.manifold* duquel est importé la classe TSNE (pour "t-Distributed Stochastic Neighbor Embedding") pour réduire la dimensionnnalité des données.
-**numpy** : Cette bibliothèque est utilisée pour manipuler des matrices ou des tableaux multidimensionnels.
-**datetime** : Pour obtenir l'heure à laquelle sont générés les graphiques en nuage de point afin d'en tirer le timestamp qui sera ajouté au nom auquel est enregistré le graphique.
+Les bibliothèques nécessaires à l'exécution du code sont listées dans ce fichier.
+
+- **networkx** : La bibliothèque NetworkX est utilisée pour créer les graphs dans le fichier *graph_nx.py*.
+- **torch** : Du package Pytorch est extrait le dataset *Cora* sur lequel sera entrainé les modèles de classification des noeuds avec différentes couches de convolution (GCN & GAT).
+- **matplotlib** : Pour la visualisation de la classification des graphs et de la pertinence du modèle sur les données de validation et de test.
+- **scikit-learn** : Le module *sklearn.manifold* duquel est importé la classe TSNE (pour "t-Distributed Stochastic Neighbor Embedding") pour réduire la dimensionnnalité des données.
+- **numpy** : Cette bibliothèque est utilisée pour manipuler des matrices ou des tableaux multidimensionnels.
+- **datetime** : Pour obtenir l'heure à laquelle sont générés les graphiques en nuage de point afin d'en tirer le timestamp qui sera ajouté au nom auquel est enregistré le graphique.
