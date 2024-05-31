@@ -8,7 +8,7 @@ Afin de m'initier aux graphs, j'ai suivi le tuto de [Datacamp](https://www.datac
 **GAT** : Utilise des mécanismes d'attention. Des poids d'attention sont attribués aux noeuds voisins pour mettre en évidence les liens forts entre ceux-ci et le noeud cible afin de se concentrer sur les voisins les plus pertinents lors du processus du propagation d'informations. Ke GAT est particulièrement utile pour les tâches impliquant des informations relationnelles complexes.
 
 ## Structure
-'''bash
+```bash
 project/
 │
 ├── graph/ # Dossier à créer
@@ -21,7 +21,8 @@ project/
 ├── graph_torch_gat.py
 ├── requirements.txt
 └── README.md
-'''
+```
+
 ## Jeu de données
 Le dataset *cora* provient de l'ensemble de données de citations "Planetoid" disponible dans Pytorch. Nous exploiterons le premier graph du dataset duquel on classifiera les noeuds. 
 Voici les informations sur ce graph : 
