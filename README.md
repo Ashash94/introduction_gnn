@@ -8,6 +8,7 @@ Afin de m'initier aux graphs, j'ai suivi le tuto de [Datacamp](https://www.datac
 **GAT** : Utilise des mécanismes d'attention. Des poids d'attention sont attribués aux noeuds voisins pour mettre en évidence les liens forts entre ceux-ci et le noeud cible afin de se concentrer sur les voisins les plus pertinents lors du processus du propagation d'informations. Ke GAT est particulièrement utile pour les tâches impliquant des informations relationnelles complexes.
 
 ## Structure
+'''bash
 project/
 │
 ├── graph/ # Dossier à créer
@@ -20,7 +21,7 @@ project/
 ├── graph_torch_gat.py
 ├── requirements.txt
 └── README.md
-
+'''
 ## Jeu de données
 Le dataset *cora* provient de l'ensemble de données de citations "Planetoid" disponible dans Pytorch. Nous exploiterons le premier graph du dataset duquel on classifiera les noeuds. 
 Voici les informations sur ce graph : 
@@ -43,9 +44,10 @@ Ce fichier contient les classes et les fonctions nécessaires à l'exécution de
 Le fichier *graph_nx.py* permet de créer un graph avec la bibliothèque Netwrorx. Chaque noeud a un attribut, une couleur et un poids. Les arrêtes ont deux coordonées, les attributs des deux noeuds qu'ils relient. Dans le cas du graph directionnel, l'ordre d'écriture est importante. Ex : *I* et *J* sont deux noeuds dans un graph et on souhaite que l'arrête parte de *J* vers *I* dans ce cas-là on l'écrit "[(J, I)]". 
 
 ### **graph_torch_gcn.py**
-Ce code permet
+Ce code renvoie les résultats des epochs selon la méthode GCN et génère deux graphiques en nuage de points.
 
 ### **graph_torch_gat.py**
+Ce code renvoie les résultats des epochs selon la méthode GAT et génère deux graphiques un en courbe et un autre en nuage de points.
 
 ### **requirements.txt**
 
